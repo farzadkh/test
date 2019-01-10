@@ -1,54 +1,3 @@
----
-title: Configuration Entities - Physical Design
-layout: post
-author: farzad.khandan.eco
-permalink: /configuration-entities-physical-design/
-source-id: 1xL9z_lHRXBUut3ci0HS6C9XtJxlLBzBezQm4qwP0D_g
-published: true
----
-Configuration Entities 
-
-Physical Design
-
-Version 0.1
-
-![image alt text]({{ site.url }}/public/u45gRYLwEvz1OORW2E2Kw_img_0.png)
-
-Document Revision History
-
-<table>
-  <tr>
-    <td>Version</td>
-    <td>Date</td>
-    <td>Created/Revised By</td>
-  </tr>
-  <tr>
-    <td>0.1</td>
-    <td>Jan 9, 2019</td>
-    <td>Farzad Khandan</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
-
-
-Contents
-
-[[TOC]]
-
 # Introduction
 
 ## Purpose
@@ -270,7 +219,8 @@ Attributes</td>
     <td></td>
   </tr>
   <tr>
-    <td>item_key (PK) (S)</td>
+    <td>item_key
+ (PK) (S)</td>
     <td>sort_key 
 (SK) (S)</td>
     <td></td>
