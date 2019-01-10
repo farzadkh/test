@@ -76,104 +76,125 @@ This table contains almost all "basic" configuration entities according to REF#1
 
 ### Table design
 
-<table>
-  <tr>
-    <td>Primary Key</td>
-    <td></td>
-    <td>
-
-Attributes</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>config_type (PK) (S)</td>
-    <td>config_key 
-(SK) (S)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>
-
-sys</td>
-    <td>config_version</td>
-    <td>crops (L)</td>
-    <td>label_categories (L)</td>
-    <td>machine_types (L) </td>
-    <td></td>
-    <td>account_types (L)</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>latest#sys#{date}</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>config_version</td>
-    <td>pulse_lights (L)</td>
-    <td>solid_lights (L)</td>
-    <td>aux_sensors (L)</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>latest#recipe#{date}</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>
-crop_variety</td>
-    <td>crop_variety</td>
-    <td>crop (S)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>C#{value}</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>
-label</td>
-    <td>label</td>
-    <td>category (S)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>L#{value}</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+<table cellpadding="2" cellspacing="2">
+	<tr>
+		<td colspan="2" bgcolor="#cfe2f3" style="background: #cfe2f3" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">Primary
+			Key</font></font></font></p>
+		</td>
+		<td rowspan="2" colspan="5" bgcolor="#cfe2f3" style="background: #cfe2f3" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">Attributes</font></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#cfe2f3" style="background: #cfe2f3" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">config_type
+			(PK) (S)</font></font></font></p>
+		</td>
+		<td bgcolor="#cfe2f3" style="background: #cfe2f3" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="margin-bottom: 0cm; border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">config_key</font></font></font></p>
+			<p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">(SK)
+			(S)</font></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="4" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">sys</font></font></font></p>
+		</td>
+		<td bgcolor="#fff2cc" style="background: #fff2cc" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">config_version</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">crops
+			(L)</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">label_categories
+			(L)</font></font></font></p>
+		</td>
+		<td colspan="2" bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">machine_types
+			(L)</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">account_types
+			(L)</font></font></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">latest#sys#{date}</font></font></font></p>
+		</td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+		<td colspan="2" style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td bgcolor="#fff2cc" style="background: #fff2cc" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">config_version</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">pulse_lights
+			(L)</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">solid_lights
+			(L)</font></font></font></p>
+		</td>
+		<td colspan="2" bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">aux_sensors
+			(L)</font></font></font></p>
+		</td>
+		<td rowspan="2" style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">latest#recipe#{date}</font></font></font></p>
+		</td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+		<td colspan="2" style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">crop_variety</font></font></font></p>
+		</td>
+		<td bgcolor="#fff2cc" style="background: #fff2cc" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">crop_variety</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">crop
+			(S)</font></font></font></p>
+		</td>
+		<td rowspan="2" colspan="4" style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">C#{value}</font></font></font></p>
+		</td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">label</font></font></font></p>
+		</td>
+		<td bgcolor="#fff2cc" style="background: #fff2cc" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">label</font></font></font></p>
+		</td>
+		<td bgcolor="#d9d9d9" style="background: #d9d9d9" style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="left" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">category
+			(S)</font></font></font></p>
+		</td>
+		<td rowspan="2" colspan="4" style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
+	<tr>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"><p align="center" style="border: none; padding: 0cm; font-variant: normal; font-style: normal; font-weight: normal; text-decoration: none">
+			<font color="#000000"><font face="Arial"><font size="1" style="font-size: 8pt">L#{value}</font></font></font></p>
+		</td>
+		<td style="border: 1.00pt solid #000000; padding: 0.18cm"></td>
+	</tr>
 </table>
 
 
