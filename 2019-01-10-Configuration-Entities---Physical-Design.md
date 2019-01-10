@@ -111,7 +111,7 @@ sys</td>
   </tr>
   <tr>
     <td></td>
-    <td>latest#sys#<date></td>
+    <td>latest#sys#{date}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -129,7 +129,7 @@ sys</td>
   </tr>
   <tr>
     <td></td>
-    <td>latest#recipe#<date></td>
+    <td>latest#recipe#{date}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -148,7 +148,7 @@ crop_variety</td>
   </tr>
   <tr>
     <td></td>
-    <td>C#<value></td>
+    <td>C#{value}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -167,7 +167,7 @@ label</td>
   </tr>
   <tr>
     <td></td>
-    <td>L#<value></td>
+    <td>L#{value}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -246,7 +246,7 @@ Attributes</td>
 
 
 
-customer-<customer_id>
+customer#{customer_id}
 
 </td>
     <td>customer_id</td>
@@ -261,7 +261,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>C#<customer_id></td>
+    <td>C#{customer_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -285,7 +285,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>F#<farm_id></td>
+    <td>F#{farm_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -309,7 +309,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>L#<localization_set></td>
+    <td>L#{localization_set}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -333,7 +333,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>M#<machine_id></td>
+    <td>M#{machine_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -357,7 +357,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>M#<machine_id>#C#<config_id></td>
+    <td>M#{machine_id}#C#{config_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -381,7 +381,7 @@ customer-<customer_id>
   </tr>
   <tr>
     <td></td>
-    <td>M#<machine_id>#F#<farm_id></td>
+    <td>M#{machine_id}#F#{farm_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -397,7 +397,7 @@ customer-<customer_id>
 
 
 
-config-set-<config_id>
+config-set#<config_id>
 
 
 </td>
@@ -413,7 +413,7 @@ config-set-<config_id>
   </tr>
   <tr>
     <td></td>
-    <td>CS#<config_id></td>
+    <td>CS#{config_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -437,7 +437,7 @@ config-set-<config_id>
   </tr>
   <tr>
     <td></td>
-    <td>CR#<recipe_id></td>
+    <td>CR#{recipe_id}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -461,7 +461,7 @@ config-set-<config_id>
   </tr>
   <tr>
     <td></td>
-    <td>CL#<label></td>
+    <td>CL#{label}</td>
     <td></td>
     <td></td>
     <td></td>
@@ -485,7 +485,7 @@ config-set-<config_id>
 
 
 
-recipe-<recipe_id></td>
+recipe#{recipe_id}</td>
     <td>recipe_id</td>
     <td>recipe_name (S)</td>
     <td>creation_date (S)</td>
